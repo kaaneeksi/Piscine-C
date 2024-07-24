@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeksi <yeksi@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 11:21:36 by yeksi             #+#    #+#             */
-/*   Updated: 2024/07/10 11:21:36 by yeksi            ###   ########.fr       */
+/*   Created: 2024/07/22 02:31:45 by yeksi             #+#    #+#             */
+/*   Updated: 2024/07/22 02:31:45 by yeksi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	ft_ft(int *nbr)
+#include <stdio.h>
+int	ft_sqrt(int nb)
 {
-	*nbr = 42;
+	 int result;
+
+	 result = 0;
+	 result = nb * nb/2;
+	return (result);
+
+
 }
+ int main ()
+ {
+	printf("%d",ft_sqrt(4));
+ }

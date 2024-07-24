@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeksi <yeksi@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/10 11:21:36 by yeksi             #+#    #+#             */
-/*   Updated: 2024/07/10 11:21:36 by yeksi            ###   ########.fr       */
+/*   Created: 2024/07/22 01:32:50 by yeksi             #+#    #+#             */
+/*   Updated: 2024/07/22 01:32:50 by yeksi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+int	ft_fibonacci(int index)
 {
-	*nbr = 42;
+	if (index < 0)
+		return (-1);
+	if (index == 1 || index == 0)
+		return (index);
+	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
